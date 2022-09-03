@@ -1,0 +1,96 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+
+type User @model {
+  id: ID!
+  Name:String!
+ Email:String!
+ Phone:String!
+ Profile:String!
+}
+type Org @model {
+  id: ID!
+   Logo:String!
+  SurveyorName:String!
+  TagLine:String!
+  FooterLine:String!
+  CurrentReferenceNumber:String!
+	OrgId:String!
+
+}
+type Inspection @model {
+  id: ID!
+  GeneratedReports:String!
+  InsurerDetails:String!
+  NameofProposer:String!
+  Date:String!
+  Time:String!
+  PlaceofInspection:String!
+  VehicleRegdNo:String!
+  MakeModel:String!
+  DateofRegdPurchase:String!
+  ChassisNo:String!
+  EngineNo:String!
+MiloMeter:String!
+FrtMudGuard:String!
+Fork:String!
+Handle:String!
+Speedometer:String!
+FuelTank:String!
+RearMudGuard:String!
+Silencer:String!
+CrankCase:String!
+Seats:String!
+LegGuard:String!
+WheelRim:String!
+HeadLamp:String!
+TailLamp:String!
+FrtVisorCowl:String!
+FrtRhIndicator:String!
+FrtLhIndicator:String!
+RearRhIndicator:String!	
+RearLhIndicator:String!
+	RhSideCover:String!
+  	LhSideCover:String!
+ClutchBrakeLever:String!
+	Tyre:String!
+  Remark:String!
+  Recommandedforinsurance:String!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

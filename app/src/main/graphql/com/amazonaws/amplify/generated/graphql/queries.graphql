@@ -1,0 +1,291 @@
+# this is an auto generated file. This will be overwritten
+query GetUser($id: ID!) {
+  getUser(id: $id) {
+    id
+    Name
+    Email
+    Phone
+    Profile
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListUsers(
+  $filter: ModelUserFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      Name
+      Email
+      Phone
+      Profile
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncUsers(
+  $filter: ModelUserFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncUsers(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      Name
+      Email
+      Phone
+      Profile
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetOrg($id: ID!) {
+  getOrg(id: $id) {
+    id
+    Logo
+    SurveyorName
+    TagLine
+    FooterLine
+    CurrentReferenceNumber
+    OrgId
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListOrgs($filter: ModelOrgFilterInput, $limit: Int, $nextToken: String) {
+  listOrgs(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      Logo
+      SurveyorName
+      TagLine
+      FooterLine
+      CurrentReferenceNumber
+      OrgId
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncOrgs(
+  $filter: ModelOrgFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncOrgs(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      Logo
+      SurveyorName
+      TagLine
+      FooterLine
+      CurrentReferenceNumber
+      OrgId
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetInspection($id: ID!) {
+  getInspection(id: $id) {
+    id
+    GeneratedReports
+    InsurerDetails
+    NameofProposer
+    Date
+    Time
+    PlaceofInspection
+    VehicleRegdNo
+    MakeModel
+    DateofRegdPurchase
+    ChassisNo
+    EngineNo
+    MiloMeter
+    FrtMudGuard
+    Fork
+    Handle
+    Speedometer
+    FuelTank
+    RearMudGuard
+    Silencer
+    CrankCase
+    Seats
+    LegGuard
+    WheelRim
+    HeadLamp
+    TailLamp
+    FrtVisorCowl
+    FrtRhIndicator
+    FrtLhIndicator
+    RearRhIndicator
+    RearLhIndicator
+    RhSideCover
+    LhSideCover
+    ClutchBrakeLever
+    Tyre
+    Remark
+    Recommandedforinsurance
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListInspections(
+  $filter: ModelInspectionFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listInspections(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      GeneratedReports
+      InsurerDetails
+      NameofProposer
+      Date
+      Time
+      PlaceofInspection
+      VehicleRegdNo
+      MakeModel
+      DateofRegdPurchase
+      ChassisNo
+      EngineNo
+      MiloMeter
+      FrtMudGuard
+      Fork
+      Handle
+      Speedometer
+      FuelTank
+      RearMudGuard
+      Silencer
+      CrankCase
+      Seats
+      LegGuard
+      WheelRim
+      HeadLamp
+      TailLamp
+      FrtVisorCowl
+      FrtRhIndicator
+      FrtLhIndicator
+      RearRhIndicator
+      RearLhIndicator
+      RhSideCover
+      LhSideCover
+      ClutchBrakeLever
+      Tyre
+      Remark
+      Recommandedforinsurance
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncInspections(
+  $filter: ModelInspectionFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncInspections(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      GeneratedReports
+      InsurerDetails
+      NameofProposer
+      Date
+      Time
+      PlaceofInspection
+      VehicleRegdNo
+      MakeModel
+      DateofRegdPurchase
+      ChassisNo
+      EngineNo
+      MiloMeter
+      FrtMudGuard
+      Fork
+      Handle
+      Speedometer
+      FuelTank
+      RearMudGuard
+      Silencer
+      CrankCase
+      Seats
+      LegGuard
+      WheelRim
+      HeadLamp
+      TailLamp
+      FrtVisorCowl
+      FrtRhIndicator
+      FrtLhIndicator
+      RearRhIndicator
+      RearLhIndicator
+      RhSideCover
+      LhSideCover
+      ClutchBrakeLever
+      Tyre
+      Remark
+      Recommandedforinsurance
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}

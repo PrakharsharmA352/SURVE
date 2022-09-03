@@ -1,0 +1,256 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateUser(
+  $input: CreateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  createUser(input: $input, condition: $condition) {
+    id
+    Name
+    Email
+    Phone
+    Profile
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateUser(
+  $input: UpdateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  updateUser(input: $input, condition: $condition) {
+    id
+    Name
+    Email
+    Phone
+    Profile
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteUser(
+  $input: DeleteUserInput!
+  $condition: ModelUserConditionInput
+) {
+  deleteUser(input: $input, condition: $condition) {
+    id
+    Name
+    Email
+    Phone
+    Profile
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation CreateOrg(
+  $input: CreateOrgInput!
+  $condition: ModelOrgConditionInput
+) {
+  createOrg(input: $input, condition: $condition) {
+    id
+    Logo
+    SurveyorName
+    TagLine
+    FooterLine
+    CurrentReferenceNumber
+    OrgId
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateOrg(
+  $input: UpdateOrgInput!
+  $condition: ModelOrgConditionInput
+) {
+  updateOrg(input: $input, condition: $condition) {
+    id
+    Logo
+    SurveyorName
+    TagLine
+    FooterLine
+    CurrentReferenceNumber
+    OrgId
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteOrg(
+  $input: DeleteOrgInput!
+  $condition: ModelOrgConditionInput
+) {
+  deleteOrg(input: $input, condition: $condition) {
+    id
+    Logo
+    SurveyorName
+    TagLine
+    FooterLine
+    CurrentReferenceNumber
+    OrgId
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation CreateInspection(
+  $input: CreateInspectionInput!
+  $condition: ModelInspectionConditionInput
+) {
+  createInspection(input: $input, condition: $condition) {
+    id
+    GeneratedReports
+    InsurerDetails
+    NameofProposer
+    Date
+    Time
+    PlaceofInspection
+    VehicleRegdNo
+    MakeModel
+    DateofRegdPurchase
+    ChassisNo
+    EngineNo
+    MiloMeter
+    FrtMudGuard
+    Fork
+    Handle
+    Speedometer
+    FuelTank
+    RearMudGuard
+    Silencer
+    CrankCase
+    Seats
+    LegGuard
+    WheelRim
+    HeadLamp
+    TailLamp
+    FrtVisorCowl
+    FrtRhIndicator
+    FrtLhIndicator
+    RearRhIndicator
+    RearLhIndicator
+    RhSideCover
+    LhSideCover
+    ClutchBrakeLever
+    Tyre
+    Remark
+    Recommandedforinsurance
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateInspection(
+  $input: UpdateInspectionInput!
+  $condition: ModelInspectionConditionInput
+) {
+  updateInspection(input: $input, condition: $condition) {
+    id
+    GeneratedReports
+    InsurerDetails
+    NameofProposer
+    Date
+    Time
+    PlaceofInspection
+    VehicleRegdNo
+    MakeModel
+    DateofRegdPurchase
+    ChassisNo
+    EngineNo
+    MiloMeter
+    FrtMudGuard
+    Fork
+    Handle
+    Speedometer
+    FuelTank
+    RearMudGuard
+    Silencer
+    CrankCase
+    Seats
+    LegGuard
+    WheelRim
+    HeadLamp
+    TailLamp
+    FrtVisorCowl
+    FrtRhIndicator
+    FrtLhIndicator
+    RearRhIndicator
+    RearLhIndicator
+    RhSideCover
+    LhSideCover
+    ClutchBrakeLever
+    Tyre
+    Remark
+    Recommandedforinsurance
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteInspection(
+  $input: DeleteInspectionInput!
+  $condition: ModelInspectionConditionInput
+) {
+  deleteInspection(input: $input, condition: $condition) {
+    id
+    GeneratedReports
+    InsurerDetails
+    NameofProposer
+    Date
+    Time
+    PlaceofInspection
+    VehicleRegdNo
+    MakeModel
+    DateofRegdPurchase
+    ChassisNo
+    EngineNo
+    MiloMeter
+    FrtMudGuard
+    Fork
+    Handle
+    Speedometer
+    FuelTank
+    RearMudGuard
+    Silencer
+    CrankCase
+    Seats
+    LegGuard
+    WheelRim
+    HeadLamp
+    TailLamp
+    FrtVisorCowl
+    FrtRhIndicator
+    FrtLhIndicator
+    RearRhIndicator
+    RearLhIndicator
+    RhSideCover
+    LhSideCover
+    ClutchBrakeLever
+    Tyre
+    Remark
+    Recommandedforinsurance
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
