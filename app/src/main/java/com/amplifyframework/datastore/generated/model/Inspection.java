@@ -101,11 +101,16 @@ public final class Inspection implements Model {
   }
   
   public String getGeneratedReports() {
-      return GeneratedReports;
+
+    return GeneratedReports;
+
   }
   
   public String getInsurerDetails() {
-      return InsurerDetails;
+
+    getInsurerDetails().toString();
+    return InsurerDetails;
+
   }
   
   public String getNameofProposer() {

@@ -67,7 +67,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(FrtMudGaurd_rd.toString());
+                    numbers1.add(FrtMudGaurd_rd.getText().toString());
                   //  text1.setText(FrtMudGaurd_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -77,7 +77,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(Fork_rd.toString());
+                    numbers1.add(Fork_rd.getText().toString());
                     //text2.setText(Fork_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -88,7 +88,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(Handle_rd.toString());
+                    numbers1.add(Handle_rd.getText().toString());
                     //text1.setText(Handle_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -98,7 +98,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(Speedometer_rd.toString());
+                    numbers1.add(Speedometer_rd.getText().toString());
                    // text2.setText(Speedometer_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -109,7 +109,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(RearMudGuard_rd.toString());
+                    numbers1.add(RearMudGuard_rd.getText().toString());
                   //  text1.setText(RearMudGuard_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -119,7 +119,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(Silencer_rd.toString());
+                    numbers1.add(Silencer_rd.getText().toString());
                   //  text2.setText(Silencer_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -130,7 +130,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(CrankCase_rd.toString());
+                    numbers1.add(CrankCase_rd.getText().toString());
                     //text1.setText(CrankCase_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -140,7 +140,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(Seats_rd.toString());
+                    numbers1.add(Seats_rd.getText().toString());
                    // text2.setText(Seats_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -151,7 +151,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(LegGuard_rd.toString());
+                    numbers1.add(LegGuard_rd.getText().toString());
                   //  text1.setText(LegGuard_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -161,7 +161,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(WheelRim_rd.toString());
+                    numbers1.add(WheelRim_rd.getText().toString());
                    // text2.setText(WheelRim_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -172,7 +172,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(HeadLamp_rd.toString());
+                    numbers1.add(HeadLamp_rd.getText().toString());
                    // text1.setText(HeadLamp_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -182,7 +182,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(TailLamp_rd.toString());
+                    numbers1.add(TailLamp_rd.getText().toString());
                     //text2.setText(TailLamp_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -193,7 +193,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(FrtVisorCowl_rd.toString());
+                    numbers1.add(FrtVisorCowl_rd.getText().toString());
                   //  text1.setText(FrtVisorCowl_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -203,7 +203,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(FrtRhIndicator_rd.toString());
+                    numbers1.add(FrtRhIndicator_rd.getText().toString());
                    // text2.setText(TailLamp_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -214,7 +214,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(FrtLhIndicator_rd.toString());
+                    numbers1.add(FrtLhIndicator_rd.getText().toString());
                    // text1.setText(FrtLhIndicator_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -224,7 +224,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(RearRhIndicator_rd.toString());
+                    numbers1.add(RearRhIndicator_rd.getText().toString());
                    // text2.setText(RearRhIndicator_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -235,7 +235,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(RearLhIndicator_rd.toString());
+                    numbers1.add(RearLhIndicator_rd.getText().toString());
                    // text1.setText(RhSideCover_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -245,7 +245,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(RhSideCover_rd.toString());
+                    numbers1.add(RhSideCover_rd.getText().toString());
                     // text1.setText(RhSideCover_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -255,7 +255,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(LhSidCover_rd.toString());
+                    numbers1.add(LhSidCover_rd.getText().toString());
                    // text2.setText(LhSideCover_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -265,7 +265,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(ClutchBrakeLever_rd.toString());
+                    numbers1.add(ClutchBrakeLever_rd.getText().toString());
                     //text1.setText(ClutchBrakeLever_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -275,7 +275,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(Tyre_rd.toString());
+                    numbers1.add(Tyre_rd.getText().toString());
                    // text2.setText(Tyre_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
@@ -285,11 +285,11 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                     Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    numbers1.add(RecommendedForInsurance_rd.toString());
+                    numbers1.add(RecommendedForInsurance_rd.getText().toString());
                     // text2.setText(Tyre_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
-                numbers1.add(remark.toString());
+                numbers1.add(remark.getText().toString());
                 Intent next=new Intent(getApplicationContext(),Two_wheeler4.class);
                 next.putExtra("key1", numbers1);
                startActivity(next);

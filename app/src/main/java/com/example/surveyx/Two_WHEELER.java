@@ -113,18 +113,18 @@ public class Two_WHEELER extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* numbers.add(insu.toString());
-                numbers.add(proposer.toString());
-                numbers.add(format1.toString());
-                numbers.add(format2.toString());
-                numbers.add(currentAddTv.toString());
-                numbers.add(vehiclereg.toString());
-                numbers.add(chasiss_no.toString());
-                numbers.add(make_model.toString());
-                numbers.add(EngineNo.toString());
-                numbers.add(date.toString());
-                numbers.add(Milometer.toString());*/
-                numbers.add("hello");
+                numbers.add(insu.getText().toString());
+                numbers.add(proposer.getText().toString());
+                numbers.add(format1.getText().toString());
+                numbers.add(format2.getText().toString());
+                numbers.add(currentAddTv.getText().toString());
+                numbers.add(vehiclereg.getText().toString());
+                numbers.add(chasiss_no.getText().toString());
+                numbers.add(make_model.getText().toString());
+                numbers.add(EngineNo.getText().toString());
+                numbers.add(date.getText().toString());
+                numbers.add(Milometer.getText().toString());
+                //numbers.add("hello");
                 Intent next = new Intent(getApplicationContext(),Two_wheeler2.class);
                 next.putExtra("key", numbers);
                 startActivity(next);

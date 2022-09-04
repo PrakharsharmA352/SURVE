@@ -120,17 +120,19 @@ TextView checkcode;
             @Override
             public void onClick(View v) {
             //Toast.makeText(getApplicationContext(),"Submit Btn Work!!!!",Toast.LENGTH_LONG).show();
-                Log.i("val",String.valueOf(numbersList));
-                /*Inspection inspection =Inspection.builder().generatedReports("").insurerDetails("").nameofProposer("").date("").time("").placeofInspection("").vehicleRegdNo("").makeModel("")
+                Log.i("valll!!!",String.valueOf(numbers1List));
+                Inspection inspection =Inspection.builder().generatedReports("").insurerDetails(numbersList.get(0)).nameofProposer(numbersList.get(1)).date(numbersList.get(2)).time(numbersList.get(3)).placeofInspection(numbersList.get(4)).vehicleRegdNo(numbersList.get(5)).makeModel(numbersList.get(6))
+                        .dateofRegdPurchase(numbersList.get(7)).chassisNo(numbersList.get(8)).engineNo(numbersList.get(9)).miloMeter(numbersList.get(10)).frtMudGuard(numbers1List.get(0)).fork(numbers1List.get(1)).handle(numbers1List.get(2))
+                        .speedometer(numbers1List.get(3)).fuelTank(numbers1List.get(4)).rearMudGuard(numbers1List.get(5)).silencer(numbers1List.get(6)).crankCase(numbers1List.get(7)).seats(numbers1List.get(8)).legGuard(numbers1List.get(9)).wheelRim(numbers1List.get(10))
+                        .headLamp(numbers1List.get(11)).tailLamp(numbers1List.get(12)).frtVisorCowl(numbers1List.get(13)).frtRhIndicator(numbers1List.get(14)).frtLhIndicator(numbers1List.get(15)).rearRhIndicator(numbers1List.get(16))
+                        .rearLhIndicator(numbers1List.get(17)).rhSideCover(numbers1List.get(18)).lhSideCover(numbers1List.get(19)).clutchBrakeLever(numbers1List.get(20)).tyre(numbers1List.get(21)).remark(numbers1List.get(22)).recommandedforinsurance(numbers1List.get(23))
+                        .build();
+               /*Inspection inspection =Inspection.builder().generatedReports("").insurerDetails("").nameofProposer("").date("").time("").placeofInspection("").vehicleRegdNo("").makeModel("")
                         .dateofRegdPurchase("").chassisNo("").engineNo("").miloMeter("").frtMudGuard("").fork("").handle("")
                         .speedometer("").fuelTank("").rearMudGuard("").silencer("").crankCase("").seats("").legGuard("").wheelRim("")
                         .headLamp("").tailLamp("").frtVisorCowl("").frtRhIndicator("").frtLhIndicator("").rearRhIndicator("")
                         .rearLhIndicator("").rhSideCover("").lhSideCover("").clutchBrakeLever("").tyre("").remark("").recommandedforinsurance("")
-                        .build();
-                Amplify.DataStore.save(inspection,
-                        result -> Log.i("MyAmplifyApp", "Created a new post successfully"),
-                        error -> Log.e("MyAmplifyApp",  "Error creating post", error)
-                );*/
+                        .build();*/
               // checkcode.setText(String.valueOf(numbers1List));
         //  Toast.makeText(getApplicationContext(),String.valueOf(numbers1List),Toast.LENGTH_LONG).show();
             }
