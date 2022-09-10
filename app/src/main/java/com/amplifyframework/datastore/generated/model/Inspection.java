@@ -55,8 +55,8 @@ public final class Inspection implements Model {
   public static final QueryField LH_SIDE_COVER = field("Inspection", "LhSideCover");
   public static final QueryField CLUTCH_BRAKE_LEVER = field("Inspection", "ClutchBrakeLever");
   public static final QueryField TYRE = field("Inspection", "Tyre");
-  public static final QueryField REMARK = field("Inspection", "Remark");
   public static final QueryField RECOMMANDEDFORINSURANCE = field("Inspection", "Recommandedforinsurance");
+  public static final QueryField REMARK = field("Inspection", "Remark");
   private final @ModelField(targetType="ID", isRequired = true) String id;
   private final @ModelField(targetType="String", isRequired = true) String GeneratedReports;
   private final @ModelField(targetType="String", isRequired = true) String InsurerDetails;
@@ -92,8 +92,8 @@ public final class Inspection implements Model {
   private final @ModelField(targetType="String", isRequired = true) String LhSideCover;
   private final @ModelField(targetType="String", isRequired = true) String ClutchBrakeLever;
   private final @ModelField(targetType="String", isRequired = true) String Tyre;
-  private final @ModelField(targetType="String", isRequired = true) String Remark;
   private final @ModelField(targetType="String", isRequired = true) String Recommandedforinsurance;
+  private final @ModelField(targetType="String", isRequired = true) String Remark;
   private @ModelField(targetType="AWSDateTime", isReadOnly = true) Temporal.DateTime createdAt;
   private @ModelField(targetType="AWSDateTime", isReadOnly = true) Temporal.DateTime updatedAt;
   public String getId() {
@@ -101,16 +101,11 @@ public final class Inspection implements Model {
   }
   
   public String getGeneratedReports() {
-
-    return GeneratedReports;
-
+      return GeneratedReports;
   }
   
   public String getInsurerDetails() {
-
-    getInsurerDetails().toString();
-    return InsurerDetails;
-
+      return InsurerDetails;
   }
   
   public String getNameofProposer() {
@@ -241,12 +236,12 @@ public final class Inspection implements Model {
       return Tyre;
   }
   
-  public String getRemark() {
-      return Remark;
-  }
-  
   public String getRecommandedforinsurance() {
       return Recommandedforinsurance;
+  }
+  
+  public String getRemark() {
+      return Remark;
   }
   
   public Temporal.DateTime getCreatedAt() {
@@ -257,7 +252,7 @@ public final class Inspection implements Model {
       return updatedAt;
   }
   
-  private Inspection(String id, String GeneratedReports, String InsurerDetails, String NameofProposer, String Date, String Time, String PlaceofInspection, String VehicleRegdNo, String MakeModel, String DateofRegdPurchase, String ChassisNo, String EngineNo, String MiloMeter, String FrtMudGuard, String Fork, String Handle, String Speedometer, String FuelTank, String RearMudGuard, String Silencer, String CrankCase, String Seats, String LegGuard, String WheelRim, String HeadLamp, String TailLamp, String FrtVisorCowl, String FrtRhIndicator, String FrtLhIndicator, String RearRhIndicator, String RearLhIndicator, String RhSideCover, String LhSideCover, String ClutchBrakeLever, String Tyre, String Remark, String Recommandedforinsurance) {
+  private Inspection(String id, String GeneratedReports, String InsurerDetails, String NameofProposer, String Date, String Time, String PlaceofInspection, String VehicleRegdNo, String MakeModel, String DateofRegdPurchase, String ChassisNo, String EngineNo, String MiloMeter, String FrtMudGuard, String Fork, String Handle, String Speedometer, String FuelTank, String RearMudGuard, String Silencer, String CrankCase, String Seats, String LegGuard, String WheelRim, String HeadLamp, String TailLamp, String FrtVisorCowl, String FrtRhIndicator, String FrtLhIndicator, String RearRhIndicator, String RearLhIndicator, String RhSideCover, String LhSideCover, String ClutchBrakeLever, String Tyre, String Recommandedforinsurance, String Remark) {
     this.id = id;
     this.GeneratedReports = GeneratedReports;
     this.InsurerDetails = InsurerDetails;
@@ -293,8 +288,8 @@ public final class Inspection implements Model {
     this.LhSideCover = LhSideCover;
     this.ClutchBrakeLever = ClutchBrakeLever;
     this.Tyre = Tyre;
-    this.Remark = Remark;
     this.Recommandedforinsurance = Recommandedforinsurance;
+    this.Remark = Remark;
   }
   
   @Override
@@ -340,8 +335,8 @@ public final class Inspection implements Model {
               ObjectsCompat.equals(getLhSideCover(), inspection.getLhSideCover()) &&
               ObjectsCompat.equals(getClutchBrakeLever(), inspection.getClutchBrakeLever()) &&
               ObjectsCompat.equals(getTyre(), inspection.getTyre()) &&
-              ObjectsCompat.equals(getRemark(), inspection.getRemark()) &&
               ObjectsCompat.equals(getRecommandedforinsurance(), inspection.getRecommandedforinsurance()) &&
+              ObjectsCompat.equals(getRemark(), inspection.getRemark()) &&
               ObjectsCompat.equals(getCreatedAt(), inspection.getCreatedAt()) &&
               ObjectsCompat.equals(getUpdatedAt(), inspection.getUpdatedAt());
       }
@@ -385,8 +380,8 @@ public final class Inspection implements Model {
       .append(getLhSideCover())
       .append(getClutchBrakeLever())
       .append(getTyre())
-      .append(getRemark())
       .append(getRecommandedforinsurance())
+      .append(getRemark())
       .append(getCreatedAt())
       .append(getUpdatedAt())
       .toString()
@@ -432,8 +427,8 @@ public final class Inspection implements Model {
       .append("LhSideCover=" + String.valueOf(getLhSideCover()) + ", ")
       .append("ClutchBrakeLever=" + String.valueOf(getClutchBrakeLever()) + ", ")
       .append("Tyre=" + String.valueOf(getTyre()) + ", ")
-      .append("Remark=" + String.valueOf(getRemark()) + ", ")
       .append("Recommandedforinsurance=" + String.valueOf(getRecommandedforinsurance()) + ", ")
+      .append("Remark=" + String.valueOf(getRemark()) + ", ")
       .append("createdAt=" + String.valueOf(getCreatedAt()) + ", ")
       .append("updatedAt=" + String.valueOf(getUpdatedAt()))
       .append("}")
@@ -530,8 +525,8 @@ public final class Inspection implements Model {
       LhSideCover,
       ClutchBrakeLever,
       Tyre,
-      Remark,
-      Recommandedforinsurance);
+      Recommandedforinsurance,
+      Remark);
   }
   public interface GeneratedReportsStep {
     InsurerDetailsStep generatedReports(String generatedReports);
@@ -699,17 +694,17 @@ public final class Inspection implements Model {
   
 
   public interface TyreStep {
-    RemarkStep tyre(String tyre);
-  }
-  
-
-  public interface RemarkStep {
-    RecommandedforinsuranceStep remark(String remark);
+    RecommandedforinsuranceStep tyre(String tyre);
   }
   
 
   public interface RecommandedforinsuranceStep {
-    BuildStep recommandedforinsurance(String recommandedforinsurance);
+    RemarkStep recommandedforinsurance(String recommandedforinsurance);
+  }
+  
+
+  public interface RemarkStep {
+    BuildStep remark(String remark);
   }
   
 
@@ -719,7 +714,7 @@ public final class Inspection implements Model {
   }
   
 
-  public static class Builder implements GeneratedReportsStep, InsurerDetailsStep, NameofProposerStep, DateStep, TimeStep, PlaceofInspectionStep, VehicleRegdNoStep, MakeModelStep, DateofRegdPurchaseStep, ChassisNoStep, EngineNoStep, MiloMeterStep, FrtMudGuardStep, ForkStep, HandleStep, SpeedometerStep, FuelTankStep, RearMudGuardStep, SilencerStep, CrankCaseStep, SeatsStep, LegGuardStep, WheelRimStep, HeadLampStep, TailLampStep, FrtVisorCowlStep, FrtRhIndicatorStep, FrtLhIndicatorStep, RearRhIndicatorStep, RearLhIndicatorStep, RhSideCoverStep, LhSideCoverStep, ClutchBrakeLeverStep, TyreStep, RemarkStep, RecommandedforinsuranceStep, BuildStep {
+  public static class Builder implements GeneratedReportsStep, InsurerDetailsStep, NameofProposerStep, DateStep, TimeStep, PlaceofInspectionStep, VehicleRegdNoStep, MakeModelStep, DateofRegdPurchaseStep, ChassisNoStep, EngineNoStep, MiloMeterStep, FrtMudGuardStep, ForkStep, HandleStep, SpeedometerStep, FuelTankStep, RearMudGuardStep, SilencerStep, CrankCaseStep, SeatsStep, LegGuardStep, WheelRimStep, HeadLampStep, TailLampStep, FrtVisorCowlStep, FrtRhIndicatorStep, FrtLhIndicatorStep, RearRhIndicatorStep, RearLhIndicatorStep, RhSideCoverStep, LhSideCoverStep, ClutchBrakeLeverStep, TyreStep, RecommandedforinsuranceStep, RemarkStep, BuildStep {
     private String id;
     private String GeneratedReports;
     private String InsurerDetails;
@@ -755,8 +750,8 @@ public final class Inspection implements Model {
     private String LhSideCover;
     private String ClutchBrakeLever;
     private String Tyre;
-    private String Remark;
     private String Recommandedforinsurance;
+    private String Remark;
     @Override
      public Inspection build() {
         String id = this.id != null ? this.id : UUID.randomUUID().toString();
@@ -797,8 +792,8 @@ public final class Inspection implements Model {
           LhSideCover,
           ClutchBrakeLever,
           Tyre,
-          Remark,
-          Recommandedforinsurance);
+          Recommandedforinsurance,
+          Remark);
     }
     
     @Override
@@ -1033,23 +1028,23 @@ public final class Inspection implements Model {
     }
     
     @Override
-     public RemarkStep tyre(String tyre) {
+     public RecommandedforinsuranceStep tyre(String tyre) {
         Objects.requireNonNull(tyre);
         this.Tyre = tyre;
         return this;
     }
     
     @Override
-     public RecommandedforinsuranceStep remark(String remark) {
-        Objects.requireNonNull(remark);
-        this.Remark = remark;
+     public RemarkStep recommandedforinsurance(String recommandedforinsurance) {
+        Objects.requireNonNull(recommandedforinsurance);
+        this.Recommandedforinsurance = recommandedforinsurance;
         return this;
     }
     
     @Override
-     public BuildStep recommandedforinsurance(String recommandedforinsurance) {
-        Objects.requireNonNull(recommandedforinsurance);
-        this.Recommandedforinsurance = recommandedforinsurance;
+     public BuildStep remark(String remark) {
+        Objects.requireNonNull(remark);
+        this.Remark = remark;
         return this;
     }
     
@@ -1065,7 +1060,7 @@ public final class Inspection implements Model {
   
 
   public final class CopyOfBuilder extends Builder {
-    private CopyOfBuilder(String id, String generatedReports, String insurerDetails, String nameofProposer, String date, String time, String placeofInspection, String vehicleRegdNo, String makeModel, String dateofRegdPurchase, String chassisNo, String engineNo, String miloMeter, String frtMudGuard, String fork, String handle, String speedometer, String fuelTank, String rearMudGuard, String silencer, String crankCase, String seats, String legGuard, String wheelRim, String headLamp, String tailLamp, String frtVisorCowl, String frtRhIndicator, String frtLhIndicator, String rearRhIndicator, String rearLhIndicator, String rhSideCover, String lhSideCover, String clutchBrakeLever, String tyre, String remark, String recommandedforinsurance) {
+    private CopyOfBuilder(String id, String generatedReports, String insurerDetails, String nameofProposer, String date, String time, String placeofInspection, String vehicleRegdNo, String makeModel, String dateofRegdPurchase, String chassisNo, String engineNo, String miloMeter, String frtMudGuard, String fork, String handle, String speedometer, String fuelTank, String rearMudGuard, String silencer, String crankCase, String seats, String legGuard, String wheelRim, String headLamp, String tailLamp, String frtVisorCowl, String frtRhIndicator, String frtLhIndicator, String rearRhIndicator, String rearLhIndicator, String rhSideCover, String lhSideCover, String clutchBrakeLever, String tyre, String recommandedforinsurance, String remark) {
       super.id(id);
       super.generatedReports(generatedReports)
         .insurerDetails(insurerDetails)
@@ -1101,8 +1096,8 @@ public final class Inspection implements Model {
         .lhSideCover(lhSideCover)
         .clutchBrakeLever(clutchBrakeLever)
         .tyre(tyre)
-        .remark(remark)
-        .recommandedforinsurance(recommandedforinsurance);
+        .recommandedforinsurance(recommandedforinsurance)
+        .remark(remark);
     }
     
     @Override
@@ -1276,13 +1271,13 @@ public final class Inspection implements Model {
     }
     
     @Override
-     public CopyOfBuilder remark(String remark) {
-      return (CopyOfBuilder) super.remark(remark);
+     public CopyOfBuilder recommandedforinsurance(String recommandedforinsurance) {
+      return (CopyOfBuilder) super.recommandedforinsurance(recommandedforinsurance);
     }
     
     @Override
-     public CopyOfBuilder recommandedforinsurance(String recommandedforinsurance) {
-      return (CopyOfBuilder) super.recommandedforinsurance(recommandedforinsurance);
+     public CopyOfBuilder remark(String remark) {
+      return (CopyOfBuilder) super.remark(remark);
     }
   }
   

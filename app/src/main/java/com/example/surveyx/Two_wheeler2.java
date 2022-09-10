@@ -60,7 +60,8 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
             @Override
             public void onClick(View v) {
 
-                Log.i("val",String.valueOf(numbersList));
+               // Log.i("val",String.valueOf(numbersList));
+
                 int FrtMudGaurd_id = FrtMudGaurd_rg.getCheckedRadioButtonId();
                 FrtMudGaurd_rd= (RadioButton) findViewById(FrtMudGaurd_id);
                 if(FrtMudGaurd_id==-1){
@@ -102,6 +103,27 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                    // text2.setText(Speedometer_rd.getText());
                     //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
                 }
+                int FuelTank_id = FuelTank_rg.getCheckedRadioButtonId();
+                FuelTank_rd= (RadioButton) findViewById(FuelTank_id);
+                if(FuelTank_id==-1){
+                    Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    numbers1.add(FuelTank_rd.getText().toString());
+                    //text1.setText(Handle_rd.getText());
+                    //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
+                }
+              /*  int Speedometer_id =Speedometer_rg.getCheckedRadioButtonId();
+                Speedometer_rd=(RadioButton) findViewById(Speedometer_id);
+                if(Speedometer_id==-1){
+                    Toast.makeText(Two_wheeler2.this,"Nothing selected", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    numbers1.add(Speedometer_rd.getText().toString());
+                    // text2.setText(Speedometer_rd.getText());
+                    //Toast.makeText(Two_wheeler2.this,genderradioButton.getText(), Toast.LENGTH_SHORT).show();
+                }*/
+
                 ////////////333333333333333333333/////////
                 int RearMudGuard_id = RearMudGuard_rg.getCheckedRadioButtonId();
                 RearMudGuard_rd= (RadioButton) findViewById(RearMudGuard_id);
@@ -292,6 +314,7 @@ RadioButton FrtMudGaurd_rd,Fork_rd,Handle_rd,Speedometer_rd,FuelTank_rd,RearMudG
                 numbers1.add(remark.getText().toString());
                 Intent next=new Intent(getApplicationContext(),Two_wheeler4.class);
                 next.putExtra("key1", numbers1);
+                next.putExtra("key",numbersList);
                startActivity(next);
             }
         });

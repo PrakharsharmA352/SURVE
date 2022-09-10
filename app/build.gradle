@@ -32,6 +32,8 @@ android {
 }
 apply plugin: 'com.android.application'
 dependencies {
+    implementation 'com.amplifyframework:aws-storage-s3:1.37.3'
+    implementation 'com.amplifyframework:aws-auth-cognito:1.37.3'
     implementation 'com.amplifyframework:aws-datastore:1.37.2'
 
     // Support for Java 8 features

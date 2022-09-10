@@ -166,8 +166,8 @@ query GetInspection($id: ID!) {
     LhSideCover
     ClutchBrakeLever
     Tyre
-    Remark
     Recommandedforinsurance
+    Remark
     createdAt
     updatedAt
     _version
@@ -217,8 +217,8 @@ query ListInspections(
       LhSideCover
       ClutchBrakeLever
       Tyre
-      Remark
       Recommandedforinsurance
+      Remark
       createdAt
       updatedAt
       _version
@@ -277,8 +277,8 @@ query SyncInspections(
       LhSideCover
       ClutchBrakeLever
       Tyre
-      Remark
       Recommandedforinsurance
+      Remark
       createdAt
       updatedAt
       _version

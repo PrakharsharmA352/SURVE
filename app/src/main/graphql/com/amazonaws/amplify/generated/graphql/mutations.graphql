@@ -147,8 +147,8 @@ mutation CreateInspection(
     LhSideCover
     ClutchBrakeLever
     Tyre
-    Remark
     Recommandedforinsurance
+    Remark
     createdAt
     updatedAt
     _version
@@ -196,8 +196,8 @@ mutation UpdateInspection(
     LhSideCover
     ClutchBrakeLever
     Tyre
-    Remark
     Recommandedforinsurance
+    Remark
     createdAt
     updatedAt
     _version
@@ -245,8 +245,8 @@ mutation DeleteInspection(
     LhSideCover
     ClutchBrakeLever
     Tyre
-    Remark
     Recommandedforinsurance
+    Remark
     createdAt
     updatedAt
     _version

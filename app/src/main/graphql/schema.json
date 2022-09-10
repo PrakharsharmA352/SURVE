@@ -2156,7 +2156,7 @@
                         "deprecationReason": null
                     },
                     {
-                        "name": "Remark",
+                        "name": "Recommandedforinsurance",
                         "description": null,
                         "args": [],
                         "type": {
@@ -2172,7 +2172,7 @@
                         "deprecationReason": null
                     },
                     {
-                        "name": "Recommandedforinsurance",
+                        "name": "Remark",
                         "description": null,
                         "args": [],
                         "type": {
@@ -2626,7 +2626,7 @@
                         "defaultValue": null
                     },
                     {
-                        "name": "Remark",
+                        "name": "Recommandedforinsurance",
                         "description": null,
                         "type": {
                             "kind": "INPUT_OBJECT",
@@ -2636,7 +2636,7 @@
                         "defaultValue": null
                     },
                     {
-                        "name": "Recommandedforinsurance",
+                        "name": "Remark",
                         "description": null,
                         "type": {
                             "kind": "INPUT_OBJECT",
@@ -4220,7 +4220,7 @@
                         "defaultValue": null
                     },
                     {
-                        "name": "Remark",
+                        "name": "Recommandedforinsurance",
                         "description": null,
                         "type": {
                             "kind": "NON_NULL",
@@ -4234,7 +4234,7 @@
                         "defaultValue": null
                     },
                     {
-                        "name": "Recommandedforinsurance",
+                        "name": "Remark",
                         "description": null,
                         "type": {
                             "kind": "NON_NULL",
@@ -4609,7 +4609,7 @@
                         "defaultValue": null
                     },
                     {
-                        "name": "Remark",
+                        "name": "Recommandedforinsurance",
                         "description": null,
                         "type": {
                             "kind": "INPUT_OBJECT",
@@ -4619,7 +4619,7 @@
                         "defaultValue": null
                     },
                     {
-                        "name": "Recommandedforinsurance",
+                        "name": "Remark",
                         "description": null,
                         "type": {
                             "kind": "INPUT_OBJECT",
@@ -5032,7 +5032,7 @@
                         "defaultValue": null
                     },
                     {
-                        "name": "Remark",
+                        "name": "Recommandedforinsurance",
                         "description": null,
                         "type": {
                             "kind": "SCALAR",
@@ -5042,7 +5042,7 @@
                         "defaultValue": null
                     },
                     {
-                        "name": "Recommandedforinsurance",
+                        "name": "Remark",
                         "description": null,
                         "type": {
                             "kind": "SCALAR",
@@ -6160,7 +6160,7 @@
                         "defaultValue": null
                     },
                     {
-                        "name": "Remark",
+                        "name": "Recommandedforinsurance",
                         "description": null,
                         "type": {
                             "kind": "INPUT_OBJECT",
@@ -6170,7 +6170,7 @@
                         "defaultValue": null
                     },
                     {
-                        "name": "Recommandedforinsurance",
+                        "name": "Remark",
                         "description": null,
                         "type": {
                             "kind": "INPUT_OBJECT",

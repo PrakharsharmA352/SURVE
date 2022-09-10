@@ -10,6 +10,18 @@
       "StackName": "amplify-surveyxmasternew-devaa-114947",
       "StackId": "arn:aws:cloudformation:us-west-1:116124868067:stack/amplify-surveyxmasternew-devaa-114947/c2d7a2d0-282b-11ed-a4f4-02601ee85cab",
       "AmplifyAppId": "dcb2btttb86un"
+    },
+    "categories": {
+      "auth": {
+        "surveyxmasternew9d58572b": {},
+        "true": {}
+      },
+      "function": {
+        "S3Trigger3c8739d1": {
+          "deploymentBucketName": "amplify-surveyxmasternew-devaa-114947-deployment",
+          "s3Key": "amplify-builds/S3Trigger3c8739d1-4c515934433470795634-build.zip"
+        }
+      }
     }
   }
 }

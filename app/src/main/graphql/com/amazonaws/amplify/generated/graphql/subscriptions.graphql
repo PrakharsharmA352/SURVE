@@ -128,8 +128,8 @@ subscription OnCreateInspection(
     LhSideCover
     ClutchBrakeLever
     Tyre
-    Remark
     Recommandedforinsurance
+    Remark
     createdAt
     updatedAt
     _version
@@ -176,8 +176,8 @@ subscription OnUpdateInspection(
     LhSideCover
     ClutchBrakeLever
     Tyre
-    Remark
     Recommandedforinsurance
+    Remark
     createdAt
     updatedAt
     _version
@@ -224,8 +224,8 @@ subscription OnDeleteInspection(
     LhSideCover
     ClutchBrakeLever
     Tyre
-    Remark
     Recommandedforinsurance
+    Remark
     createdAt
     updatedAt
     _version
