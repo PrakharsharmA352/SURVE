@@ -118,10 +118,10 @@ TextView checkcode;
         submitbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            //Toast.makeText(getApplicationContext(),"Submit Btn Work!!!!",Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(),"Submit Btn Work!!!!",Toast.LENGTH_LONG).show();
                 Log.i("valll!!!",String.valueOf(numbers1List));
                 Log.i("value!!",String.valueOf(numbersList));
-               Inspection item =Inspection.builder().generatedReports("").insurerDetails(numbersList.get(0)).nameofProposer(numbersList.get(1)).date(numbersList.get(2)).time(numbersList.get(3)).placeofInspection(numbersList.get(4)).vehicleRegdNo(numbersList.get(5)).makeModel(numbersList.get(6))
+                Inspection item =Inspection.builder().generatedReports("").insurerDetails(numbersList.get(0)).nameofProposer(numbersList.get(1)).date(numbersList.get(2)).time(numbersList.get(3)).placeofInspection(numbersList.get(4)).vehicleRegdNo(numbersList.get(5)).makeModel(numbersList.get(6))
                         .dateofRegdPurchase(numbersList.get(7)).chassisNo(numbersList.get(8)).engineNo(numbersList.get(9)).miloMeter(numbersList.get(10)).frtMudGuard("frt"+numbers1List.get(0)).fork("fork"+numbers1List.get(1)).handle("handle"+numbers1List.get(2))
                         .speedometer("speed"+numbers1List.get(3)).fuelTank("fuel"+numbers1List.get(4)).rearMudGuard("rearMudG"+numbers1List.get(5)).silencer("sile"+numbers1List.get(6)).crankCase("crankcase"+numbers1List.get(7)).seats("seat"+numbers1List.get(8)).legGuard("legGaurd"+numbers1List.get(9)).wheelRim("wheelRim"+numbers1List.get(10))
                         .headLamp("headlamp"+numbers1List.get(11)).tailLamp("tailLamp0"+numbers1List.get(12)).frtVisorCowl("frtcowl"+numbers1List.get(13)).frtRhIndicator("frtrhindi"+numbers1List.get(14)).frtLhIndicator("frtlhindi"+numbers1List.get(15)).rearRhIndicator("rearrhindi"+numbers1List.get(16))
@@ -132,8 +132,8 @@ TextView checkcode;
                         success -> Log.i("Amplify", "Saved item: " + success.item().getId()),
                         error -> Log.e("Amplify", "Could not save item to DataStore", error)
                 );
-              // checkcode.setText(String.valueOf(numbers1List));
-        //  Toast.makeText(getApplicationContext(),String.valueOf(numbers1List),Toast.LENGTH_LONG).show();
+                // checkcode.setText(String.valueOf(numbers1List));
+                //  Toast.makeText(getApplicationContext(),String.valueOf(numbers1List),Toast.LENGTH_LONG).show();
             }
         });
         // end here of submit code
