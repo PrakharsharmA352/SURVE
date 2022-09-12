@@ -289,3 +289,187 @@ query SyncInspections(
     startedAt
   }
 }
+query GetInspectionfour($id: ID!) {
+  getInspectionfour(id: $id) {
+    id
+    GeneratedReports
+    InsurerDetails
+    NameofProposer
+    Date
+    Time
+    PlaceofInspection
+    VehicleRegdNo
+    MakeModel
+    DateofRegdPurchase
+    ChassisNo
+    EngineNo
+    MiloMeter
+    Roof
+    Bonnet
+    LhFender
+    LhFrtDoor
+    LhRearDoor
+    LhQtrPanel
+    LhSideBody
+    Dicky
+    RhFender
+    RhFrtDoor
+    RhRearDoor
+    RhQtrPanel
+    RhSideBody
+    FrontBumper
+    RearBumper
+    FrtWSGlass
+    LhFrtDoorGlass
+    LhRearDoorGlass
+    RhFrtDoorGlass
+    RhRearDoorGlass
+    RhQtrGlass
+    LhQtrGlass
+    DickyGlass
+    HeadLamps
+    TailLamps
+    TyreWheel
+    RearViewMirror
+    DashBoardIPanel
+    Ele_Accessories
+    NonEle_Accessories
+    RecommendedForInsurance
+    Remarks
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListInspectionfours(
+  $filter: ModelInspectionfourFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listInspectionfours(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      GeneratedReports
+      InsurerDetails
+      NameofProposer
+      Date
+      Time
+      PlaceofInspection
+      VehicleRegdNo
+      MakeModel
+      DateofRegdPurchase
+      ChassisNo
+      EngineNo
+      MiloMeter
+      Roof
+      Bonnet
+      LhFender
+      LhFrtDoor
+      LhRearDoor
+      LhQtrPanel
+      LhSideBody
+      Dicky
+      RhFender
+      RhFrtDoor
+      RhRearDoor
+      RhQtrPanel
+      RhSideBody
+      FrontBumper
+      RearBumper
+      FrtWSGlass
+      LhFrtDoorGlass
+      LhRearDoorGlass
+      RhFrtDoorGlass
+      RhRearDoorGlass
+      RhQtrGlass
+      LhQtrGlass
+      DickyGlass
+      HeadLamps
+      TailLamps
+      TyreWheel
+      RearViewMirror
+      DashBoardIPanel
+      Ele_Accessories
+      NonEle_Accessories
+      RecommendedForInsurance
+      Remarks
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncInspectionfours(
+  $filter: ModelInspectionfourFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncInspectionfours(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      GeneratedReports
+      InsurerDetails
+      NameofProposer
+      Date
+      Time
+      PlaceofInspection
+      VehicleRegdNo
+      MakeModel
+      DateofRegdPurchase
+      ChassisNo
+      EngineNo
+      MiloMeter
+      Roof
+      Bonnet
+      LhFender
+      LhFrtDoor
+      LhRearDoor
+      LhQtrPanel
+      LhSideBody
+      Dicky
+      RhFender
+      RhFrtDoor
+      RhRearDoor
+      RhQtrPanel
+      RhSideBody
+      FrontBumper
+      RearBumper
+      FrtWSGlass
+      LhFrtDoorGlass
+      LhRearDoorGlass
+      RhFrtDoorGlass
+      RhRearDoorGlass
+      RhQtrGlass
+      LhQtrGlass
+      DickyGlass
+      HeadLamps
+      TailLamps
+      TyreWheel
+      RearViewMirror
+      DashBoardIPanel
+      Ele_Accessories
+      NonEle_Accessories
+      RecommendedForInsurance
+      Remarks
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}

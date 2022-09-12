@@ -33,7 +33,6 @@ import com.amplifyframework.datastore.generated.model.Inspection;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.ConsoleHandler;
 
 public class Two_wheeler4 extends AppCompatActivity implements View.OnClickListener{
     RecyclerView recyclerView;
@@ -64,14 +63,14 @@ TextView checkcode;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_two_wheeler4);
-        submitbtn=findViewById(R.id.submit);
+        submitbtn=findViewById(R.id.submitbtnfour);
         list=new ArrayList<>();
         recyclerView=findViewById(R.id.recycler);
         checkcode=findViewById(R.id.check_code);
         textView=findViewById(R.id.textView);
         button=findViewById(R.id.button);
         adaptor=new RecyclerAdaptor(list);
-        submit=(Button)findViewById(R.id.submit);
+        submit=(Button)findViewById(R.id.submitbtnfour);
         recyclerView.setLayoutManager(new GridLayoutManager(Two_wheeler4.this,4));
         recyclerView.setAdapter(adaptor);
         imageView1 = findViewById(R.id.my_avatar_imageview);
@@ -122,15 +121,16 @@ TextView checkcode;
             //Toast.makeText(getApplicationContext(),"Submit Btn Work!!!!",Toast.LENGTH_LONG).show();
                 Log.i("valll!!!",String.valueOf(numbers1List));
                 Log.i("value!!",String.valueOf(numbersList));
-                Inspection inspection =Inspection.builder().generatedReports("").insurerDetails(numbersList.get(0)).nameofProposer(numbersList.get(1)).date(numbersList.get(2)).time(numbersList.get(3)).placeofInspection(numbersList.get(4)).vehicleRegdNo(numbersList.get(5)).makeModel(numbersList.get(6))
+               Inspection item =Inspection.builder().generatedReports("").insurerDetails(numbersList.get(0)).nameofProposer(numbersList.get(1)).date(numbersList.get(2)).time(numbersList.get(3)).placeofInspection(numbersList.get(4)).vehicleRegdNo(numbersList.get(5)).makeModel(numbersList.get(6))
                         .dateofRegdPurchase(numbersList.get(7)).chassisNo(numbersList.get(8)).engineNo(numbersList.get(9)).miloMeter(numbersList.get(10)).frtMudGuard("frt"+numbers1List.get(0)).fork("fork"+numbers1List.get(1)).handle("handle"+numbers1List.get(2))
                         .speedometer("speed"+numbers1List.get(3)).fuelTank("fuel"+numbers1List.get(4)).rearMudGuard("rearMudG"+numbers1List.get(5)).silencer("sile"+numbers1List.get(6)).crankCase("crankcase"+numbers1List.get(7)).seats("seat"+numbers1List.get(8)).legGuard("legGaurd"+numbers1List.get(9)).wheelRim("wheelRim"+numbers1List.get(10))
                         .headLamp("headlamp"+numbers1List.get(11)).tailLamp("tailLamp0"+numbers1List.get(12)).frtVisorCowl("frtcowl"+numbers1List.get(13)).frtRhIndicator("frtrhindi"+numbers1List.get(14)).frtLhIndicator("frtlhindi"+numbers1List.get(15)).rearRhIndicator("rearrhindi"+numbers1List.get(16))
                         .rearLhIndicator("raerlh"+numbers1List.get(17)).rhSideCover("rhsidecovere"+numbers1List.get(18)).lhSideCover("lhsidecover"+numbers1List.get(19)).clutchBrakeLever("clutchbrake"+numbers1List.get(20)).tyre("tyre"+numbers1List.get(21)).recommandedforinsurance("recomnd"+numbers1List.get(22)).remark("remark"+numbers1List.get(23))
                         .build();
-                Amplify.DataStore.save(inspection,
-                        result -> Log.i("MyAmplifyApp", "Created a new post successfully"),
-                        error -> Log.e("MyAmplifyApp",  "Error creating post", error)
+                Amplify.DataStore.save(
+                        item,
+                        success -> Log.i("Amplify", "Saved item: " + success.item().getId()),
+                        error -> Log.e("Amplify", "Could not save item to DataStore", error)
                 );
               // checkcode.setText(String.valueOf(numbers1List));
         //  Toast.makeText(getApplicationContext(),String.valueOf(numbers1List),Toast.LENGTH_LONG).show();

@@ -12,6 +12,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
+
+import java.util.ArrayList;
 import java.util.Calendar;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -46,7 +48,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class Four_Wheeler extends AppCompatActivity {
-
+    private EditText insu,proposer,vehiclereg,make_model,chasiss_no,EngineNo,Milometer;
     private Button btn1;
     EditText format1, format2,currentAddTv;
     private FusedLocationProviderClient fusedLocationClient;
@@ -63,11 +65,18 @@ public class Four_Wheeler extends AppCompatActivity {
     int dayOfMonth;
    Calendar calendar;
     private Button btn;
-
+    ArrayList<String> numbers = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_four_wheeler);
+        insu=(EditText)findViewById(R.id.insureDetails);
+        proposer=(EditText) findViewById(R.id.NameofProposer);
+        vehiclereg=(EditText)findViewById(R.id.VehicleRegdNo);
+        make_model=(EditText)findViewById(R.id.MakeModel);
+        chasiss_no=(EditText)findViewById(R.id.ChassisNo);
+        EngineNo=(EditText)findViewById(R.id.engineno);
+        Milometer=(EditText)findViewById(R.id.milo_meter);
         calcbtn= (ImageButton) findViewById(R.id.btnDate);
        date = (EditText) findViewById(R.id.tvSelectedDate);
        calcbtn.setOnClickListener(new View.OnClickListener() {
@@ -117,7 +126,22 @@ public class Four_Wheeler extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+            /*    Intent next = new Intent(getApplicationContext(),four_Wheeler2.class);
+                startActivity(next);*/
+                numbers.add(insu.getText().toString());
+                numbers.add(proposer.getText().toString());
+                numbers.add(format1.getText().toString());
+                numbers.add(format2.getText().toString());
+                numbers.add(currentAddTv.getText().toString());
+                numbers.add(vehiclereg.getText().toString());
+                numbers.add(chasiss_no.getText().toString());
+                numbers.add(make_model.getText().toString());
+                numbers.add(EngineNo.getText().toString());
+                numbers.add(date.getText().toString());
+                numbers.add(Milometer.getText().toString());
+                //numbers.add("hello");
                 Intent next = new Intent(getApplicationContext(),four_Wheeler2.class);
+                next.putExtra("key", numbers);
                 startActivity(next);
             }
         });

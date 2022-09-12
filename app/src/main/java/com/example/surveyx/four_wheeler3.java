@@ -14,6 +14,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -28,6 +29,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
+import com.amplifyframework.core.Amplify;
+import com.amplifyframework.datastore.generated.model.Inspectionfour;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,6 +39,7 @@ public class four_wheeler3 extends AppCompatActivity implements View.OnClickList
         RecyclerView recyclerView;
         TextView textView;
         Button button;
+
         ArrayList<Uri> list;
         RecyclerAdaptor adaptor;
         String colum[]={
@@ -65,7 +70,8 @@ protected void onCreate(Bundle savedInstanceState) {
         textView=findViewById(R.id.textView);
         button=findViewById(R.id.button);
         adaptor=new RecyclerAdaptor(list);
-        submit=(Button)findViewById(R.id.submit);
+        submit=(Button)findViewById(R.id.submitbtnfour);
+
         recyclerView.setLayoutManager(new GridLayoutManager(four_wheeler3.this,4));
         recyclerView.setAdapter(adaptor);
         imageView1 = findViewById(R.id.my_avatar_imageview);
@@ -78,13 +84,25 @@ public void onClick(View v) {
         }
         }
         });
+        //SUBMIT BUTTON CODE FROM HERE
+        ArrayList<String> numbersList = (ArrayList<String>) getIntent().getSerializableExtra("key");
+        ArrayList<String> numbers1List = (ArrayList<String>) getIntent().getSerializableExtra("key1");
         submit.setOnClickListener(new View.OnClickListener() {
 @Override
 public void onClick(View v) {
-        Intent submitint=new Intent(getApplicationContext(),viewScreenFourWheeler.class);
-        startActivity(submitint);
+        Log.i("valll!!!",String.valueOf(numbers1List));
+        Log.i("value!!",String.valueOf(numbersList));
+        Inspectionfour inspectionfour=Inspectionfour.builder().generatedReports("").insurerDetails(numbersList.get(0)).nameofProposer(numbersList.get(1)).date(numbersList.get(2)).time(numbersList.get(3)).placeofInspection(numbersList.get(4)).vehicleRegdNo(numbersList.get(5)).makeModel(numbersList.get(6))
+                .dateofRegdPurchase(numbersList.get(7)).chassisNo(numbersList.get(8)).engineNo(numbersList.get(9)).miloMeter(numbersList.get(10)).roof(numbers1List.get(0)).bonnet(numbers1List.get(1)).lhFender(numbers1List.get(2)).lhFrtDoor(numbers1List.get(3)).lhRearDoor(numbers1List.get(4)).lhQtrPanel(numbers1List.get(5)).lhSideBody(numbers1List.get(6)).dicky(numbers1List.get(7)).rhFender(numbers1List.get(8))
+                .rhFrtDoor(numbers1List.get(9)).rhRearDoor(numbers1List.get(10)).rhQtrPanel(numbers1List.get(11)).rhSideBody(numbers1List.get(12)).frontBumper(numbers1List.get(13)).rearBumper(numbers1List.get(14)).frtWsGlass(numbers1List.get(15)).lhFrtDoorGlass(numbers1List.get(16)).lhRearDoorGlass(numbers1List.get(17)).rhFrtDoorGlass(numbers1List.get(18)).rhRearDoorGlass(numbers1List.get(19)).rhQtrGlass(numbers1List.get(20))
+                .lhQtrGlass(numbers1List.get(21)).dickyGlass(numbers1List.get(22)).headLamps(numbers1List.get(23)).tailLamps(numbers1List.get(24)).tyreWheel(numbers1List.get(25)).rearViewMirror(numbers1List.get(26)).dashBoardIPanel(numbers1List.get(27)).eleAccessories(numbers1List.get(28)).nonEleAccessories(numbers1List.get(29)).recommendedForInsurance(numbers1List.get(30)).remarks(numbers1List.get(31)).build();
+        Amplify.DataStore.save(inspectionfour,
+                result -> Log.i("MyAmplifyApp", "Created a new post successfully"),
+                error -> Log.e("MyAmplifyApp",  "Error creating post", error)
+        );
         }
         });
+        //END HERE OF CODE SUBMIT BUTTON
         button.setOnClickListener(this);
       /*  if((ActivityCompat.checkSelfPermission(
                 this,colum[0])!= PackageManager.PERMISSION_GRANTED)&&

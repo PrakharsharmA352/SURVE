@@ -2,5 +2,5 @@
   "AppSyncApiName": "surveyxmasternew",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
   "DynamoDBEnableServerSideEncryption": false,
-  "AuthModeLastUpdated": "2022-08-30T06:43:15.828Z"
+  "AuthModeLastUpdated": "2022-09-11T04:40:46.534Z"
 }

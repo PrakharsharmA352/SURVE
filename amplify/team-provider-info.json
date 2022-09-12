@@ -19,7 +19,7 @@
       "function": {
         "S3Trigger3c8739d1": {
           "deploymentBucketName": "amplify-surveyxmasternew-devaa-114947-deployment",
-          "s3Key": "amplify-builds/S3Trigger3c8739d1-4c515934433470795634-build.zip"
+          "s3Key": "amplify-builds/S3Trigger3c8739d1-5662437531324864634a-build.zip"
         }
       }
     }
